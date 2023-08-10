@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --dark-blue: #293241;
+  --dark-blue-100: #253b51;
+  --gray: #4e4958;
+  --light-gray: #e6e6f0;
+  --light-gray-100: #c1bccc;
+  --light-orange: #f67669;
+  --white: #fff;
+  --dark-white: #e5e5e5;
+  --dark-white-100: #fafafc;
+  --white: #fff
+}
+
+#page{
+  width: 750px;
+  margin: auto;
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  display: block;
+  background: var(--dark-blue);
+  height: 465px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+body{
+  background: var(--dark-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+header,
+form,
+fieldset .input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+label span{
+  margin-left: 10px;
+  font-size: 12px;
+  color: var(--light-gray-100)
+}
+
+label span:hover{
+  color: var(--gray);
+}
+
+header{
+  align-items: center;
+  margin-top: 107px;
+}
+
+header .title,
+header p{
+  color: var(--white);
+}
+
+header .title{
+  color: var(--white);
+  font-size: 36px;
+  font-family: 'Staatliches';
+}
+
+header p{
+  margin-bottom: 10px;
+}
+
+header img{
+  margin-bottom: 30.5px;
+}
+
+fieldset{
+  border: none;
+}
+
+form{
+  min-height: 300px;
+  border-radius: 22px;
+  background: var(--white);
+  margin-bottom: 100px;
+}
+
+fieldset .header-info{
+  height: 130px;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Staatliches', sans-serif;
+  color: var(--white);
+  background: var(--light-orange);
+  border-radius: 20px 20px 0 0;
+}
+
+.fieldset-wrapper{
+  padding: 32px 64px; 
+}
+
+fieldset .nameSurname{
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea,
+.input-wrapper-checkbox input{
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  background: var(--dark-white-100);
+}
+
+fieldset .input-wrapper label{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+fieldset .input-wrapper input{
+  height: 56px;
+  padding: 24px;
+  font-size: 16px;
+  color: var(--gray);
+}
+
+fieldset .nameSurname input{
+  width: 300px;
+}
+
+fieldset legend{
+  width: 620px;
+  text-align: center;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  color: var(--dark-blue-100);
+  line-height: 34px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--light-gray);
+  margin-top: -32px;
+}
+
+.input-wrapper select{
+  width: 300px;
+  margin-bottom: 31px;
+  font-size: 16px;
+  padding: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-wrapper textarea{
+  width: 600px;
+  height: 170px;
+  padding: 20px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.input-wrapper-checkbox{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-wrapper-checkbox input{
+  width: 24px;
+  height: 24px;
+}
+
+.dateAndTime{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dateAndTime > div:nth-child(1){
+  width: 100%;
+  margin-right: 32px;
+}
+
+form button{
+  margin: 64px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-family: 'Staatliches';
+  line-height: 26px;
+  color: var(--white);
+  background: var(--light-orange);
+  border: none;
+  border-radius: 8px;
+}
